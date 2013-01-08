@@ -1,24 +1,33 @@
 import facebook
+import sys
+import operator
 
-facebook = facebook.GraphAPI(access_token='AAACEdEose0cBALXwsHPPbqbn1JO9OEbVEXaBbvZCZCDMDR4yJszSIFvz0iGS7FUUqmzc3Kh2WTztoXtppkaQ2eEHYhyWVw9n1jUb6lMAZDZD')
-facebook.api_key = 250994151631017
-coordinates = ['', '', '', '', '', '', '']
-categories = {}
-args = {}
-args["type"] = "place"
-args["limit"] = 1000
-args["center"] = "40.717209,-74.006335"
-args["fields"] = "id,category"
-result = facebook.request('/search', args)
-f = open('./fb_pages.dat', 'w')
-for dict in result["data"]:
-	category_arr = facebook.fql('SELECT categories FROM page WHERE page_id = \''+dict["id"]+'\'')
-	pages[dict["id"]] = []
-	pages[dict["id"]].append(dict["category"])
-	for dict2 in category_arr[0]['categories']:
-		pages[dict["id"]].append(dict2["name"])
-print pages
+def get_categories(auth_token, api_key, coordinates, limit=1000):
+	fb = facebook.GraphAPI(auth_token)
+	fb.api_key = api_key
+	categories = {}
+	args = {}
+	args["type"] = "place"
+	args["limit"] = 1000
+	args["fields"] = "id"
+	for coordinate in coordinates:
+		args["center"] = coordinate
+		result = fb.request('/search', args)
+		for dict in result["data"]:
+			category_arr = fb.fql('SELECT categories FROM page WHERE page_id = \''+dict["id"]+'\'')
+			for dict2 in category_arr[0]['categories']:
+				if dict2["name"] not in categories:
+					categories[dict2["name"]] = 1
+				else:
+					categories[dict2["name"]] = categories[dict2["name"]] + 1
+	return categories
 
-100383549148
-Restaurant/cafe
-French Restaurant / Fine Dining Restaurant
+if __name__ == '__main__':
+	if len(sys.argv) < 4:
+		raise TypeError("Invalid # of args. Usage: auth_token, api_key, coordinate1, coordinate2 ...")
+	categories = get_categories(auth_token=sys.argv[1], api_key=sys.argv[2], coordinates=sys.argv[3:len(sys.argv)])
+	sorted_categories = sorted(categories.iteritems(), key=operator.itemgetter(1))
+	f = open('./results.txt', 'w')
+	for item in sorted_categories:
+		f.write(str(item[0]) +'\t'+str(item[1])+'\n')
+	f.close()
