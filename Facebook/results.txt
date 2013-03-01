@@ -1,0 +1,139 @@
+Pub	1
+Specialty Food Store	1
+Antiques & Vintage	1
+Health Food Restaurant	1
+Scandinavian Restaurant	1
+Russian Restaurant	1
+Scuba Diving	1
+Korean Restaurant	1
+Shoe Store	1
+Ethiopian Restaurant	1
+Attraction	1
+Sports Arena	1
+Gay Bar	1
+Hawaiian Restaurant	1
+German Restaurant	1
+Kosher Restaurant	1
+Fruit & Vegetable Store	1
+Asian Fusion Restaurant	1
+African Restaurant	1
+Mediterranean Restaurant	1
+Antique Store	1
+Ramen Restaurant	1
+Tour Guide	1
+Beach Resort	1
+Karaoke	1
+Malaysian Restaurant	1
+Greek Restaurant	1
+Race Track	1
+Asian Restaurant	1
+Tex-Mex Restaurant	2
+Dessert Restaurant	2
+Medical Spa	2
+Brazilian Restaurant	2
+Attractions/Things to Do	2
+Modern Art Museum	2
+Diner	2
+Hair Salon	2
+Vietnamese Restaurant	2
+Tours & Sightseeing	2
+Wine Bar	2
+Caribbean Restaurant	2
+Vegetarian/Vegan Restaurant	2
+Tapas Bar/Restaurant	2
+Market	2
+Playground	2
+Tour Company	2
+Donuts & Bagels	2
+Yoga & Pilates	2
+Acupuncture	2
+Spanish Restaurant	2
+Public Square	2
+Dim Sum Restaurant	2
+Spa	3
+Winery/Vineyard	3
+Hair & Beauty Supply	3
+Skin Care	3
+Latin American Restaurant	3
+Dance Club	3
+Specialty Grocery Store	4
+Golf Course	4
+Barbecue Restaurant	4
+Outdoor Recreation	4
+Tourist Information	4
+Nightlife	4
+Tea Room	4
+Cosmetics & Beauty Supply	4
+Children's Clothing Store	4
+Music	4
+Thai Restaurant	4
+National Park	4
+Art Museum	5
+Museum/Art Gallery	5
+Fast Food Restaurant	5
+Seafood Restaurant	5
+Women's Clothing Store	5
+Nail Salon	5
+Roller Coaster	5
+Bakery	5
+Arcade	5
+Outdoors	5
+Sports Bar	5
+Zoo & Aquarium	6
+Water Park	6
+Beauty Salon	6
+Book Store	6
+Burger Restaurant	6
+Bar & Grill	6
+Spa, Beauty & Personal Care	7
+French Restaurant	7
+New American Restaurant	7
+Beach	7
+Pizza Place	7
+Sushi Restaurant	8
+Steakhouse	8
+Event Venue	8
+Sandwich Shop	8
+Performance Venue	8
+Japanese Restaurant	8
+Gym	8
+Mexican Restaurant	8
+Fine Dining Restaurant	9
+Movie Theatre	9
+Historical Place	9
+Shopping District	9
+Food & Grocery	9
+Breakfast & Brunch Restaurant	10
+Concert Venue	10
+Food & Restaurant	10
+Clothing Store	10
+Event	10
+Shopping Mall	11
+Theatre	11
+Health/Beauty	11
+Museum	11
+Coffee Shop	13
+Art Gallery	13
+Chinese Restaurant	13
+Amusement Park Ride	14
+Italian Restaurant	14
+Fitness Center	14
+Park	14
+Food/Beverages	14
+Landmark	15
+Night Club	15
+Family Style Restaurant	16
+American Restaurant	17
+Cafe	17
+Amusement	19
+Sports & Recreation	20
+Resort	21
+Sports Venue/Stadium	21
+Public Places & Attractions	22
+Arts & Entertainment	34
+Theme Park	36
+College/University	36
+Shopping & Retail	42
+Bar	43
+Tourist Attraction	46
+Restaurant	59
