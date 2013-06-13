@@ -1,0 +1,1 @@
+curl -X POST -d @GetAmenityAvailability.txt -v -H "Content-Type: application/json; charset=utf-8" -H "Authorization: Basic dGVqYXN3aXl2czpUZWphc3dpODclMjE=" https://api.lafitness.com/Services/Private.svc/GetAmenityAvailability
